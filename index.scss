@@ -1,0 +1,432 @@
+$background-color1: #FFFFFF;
+$background-color2: #000000;
+$font-weight: bold;
+$font-color1: #FF6B6B;
+$font-color2: #000000;
+$font-color3: white;
+$font-size1: 14px;
+$font-size2: 16px;
+$font-size3: 18px;
+$font-size4: 20px;
+$font-family: Montserrat;
+@media screen and (max-width:1920px){
+    .burger {
+        width: 100%;
+        height: 38px;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $background-color2;
+        color: $font-color3;
+        font-size: $font-size1;
+    }
+    .happy{
+        font-weight: $font-weight;
+    }
+    .counter{
+        margin-left: 2%;
+    }
+    .burger span{
+       display: inline-block;
+       color: $font-color1;
+    }
+    .head {
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 100%;
+        margin-top: 2%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #logo{
+        width: 255px;
+        height: 34px;
+        margin-top: -4%;
+        background: transparent;
+        position: relative;
+        top: 50px;
+    }
+    .socjal{
+        height: auto;
+        width: 10%;
+        align-items: center;
+        padding: 2%;
+        margin-bottom: -1%;
+        border-bottom: 1px solid #000000;
+    }
+    .socjal img{
+        padding: 2%;
+        width: 20px;
+        margin-left: 10%;
+    }
+    .zakup{
+        display: flex;
+        width: 20%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -1%;
+        color: $font-color2;
+        border-bottom: solid 1px #000000;
+    }
+    .zakup img{
+        width: 21px;
+        padding-right: 10%;
+    }
+
+    nav{
+        display: inline-block;
+        margin-top: -10%;
+        font-size: $font-size2;
+        color: $font-color2;
+        width: 100%;
+        height: 19px;
+        list-style: none;
+        text-align: center;
+        position: relative;
+        right: 5%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav li{
+        margin: 2%;
+        list-style: none;
+    }
+    #wszystko{
+        color: $font-color1;
+    }
+    .scroll{
+        margin-top: 2%;
+        width: 100%;
+        background: $background-color2;
+        overflow: hidden;
+    }
+    .text{
+        height: 38px;
+        vertical-align: middle;
+        color: $font-color3;
+        font-size: $font-size4;
+        overflow: hidden;
+        animation: text-animation 15s linear infinite;
+        white-space: nowrap;
+    }
+    @keyframes text-animation {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+    }
+    .baner{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1%;
+        object-fit: contain;
+
+    }
+    .baner img{
+        width: 45%;
+    }
+    #button{
+        width: auto;
+        position:absolute ;
+        top: 95%;
+        left: 20%;
+        z-index: 2;
+        border:none;
+        background-image: url('../fot/Button.svg');
+    }
+    #button3{
+        width: auto;
+        position:absolute ;
+        top: 95%;
+        right: 20%;
+        z-index: 2;
+        border: none;
+        background-image: url('../fot/Button-1.svg');
+    }
+    h4{
+        margin-left: 3%;
+    }
+    .karuzela{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .karuzela div{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .karuzela img{
+        width: 100%;
+        
+    }
+    #arrow{
+        background: url('../fot/ARROW-1.svg');
+    }
+    #arrow:hover{
+        background: url('../fot/ARROW.svg');
+        transform: scaleX(-1);
+    }
+    #arrow2{
+        transform: scaleX(-1);
+        background: url('../fot/ARROW-1.svg');
+    }
+    #arrow2:hover{
+        background: url('../fot/ARROW.svg');
+        transform: scaleX(1);
+    }
+    .baner2{
+        width:100%;
+        overflow: hidden;
+
+    }
+    .baner2 button{
+        z-index: 2;
+        position:relative;
+        left: 62%;
+        bottom: 200px;
+    }
+    #baner3{
+        height: auto;
+        object-fit: contain;
+        overflow: hidden;
+        margin-top: 2%;
+        z-index: -1;
+    }
+    .produkty {
+        display: flex;
+        justify-content: space-between  ;
+        align-items:flex-start;
+      }
+      
+    .karta,
+    .karta2 {
+        width: 341px;
+        height: 551px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+      
+    .karta .fot,
+    .karta2 .fot {
+        position: relative;
+    }
+
+    .karta img,
+    .karta2 img {
+        width: 100%;
+        object-fit: contain;
+    }
+      
+    .karta .serce,
+    .karta2 .serce {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 34px;
+        height: 34px;
+        background: #FFFFFF;
+        opacity: 0.55;
+        border-radius: 50%;
+        background-size: 34px 34px;
+        align-items: center;    
+    }
+
+    .karta .serce.full,
+    .karta2 .serce.full{
+        background-color: #90A99E;
+    }
+
+    .serce img{
+        position: relative;
+        left: 6px;
+        top: 7px;
+        width: 22px;
+    }
+      
+    .karta .adnot,
+    .karta2 .adnot {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .adnot img{
+        margin: 5px;
+        height: 13px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .karta .rabat,
+    .karta2 .rabat {
+        position: absolute;
+        bottom: 43px;
+        left: 8px;
+        font-size: $font-size3;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        letter-spacing: 0.54px;
+        padding: 5px 10px;
+    }
+      
+    .karta .dane,
+    .karta2 .dane {
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+      
+    .karta .cena,
+    .karta2 .cena {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .karta .stara-cena,
+    .karta2 .stara-cena {
+        text-decoration: line-through;
+        color: gray;
+        margin: 2%;
+    }
+
+    .karta .nowa-cena,
+    .karta2 .nowa-cena{
+        color: #FF0102;
+    }
+      
+    .karta .sex,
+    .karta2 .sex{
+        width: 20%;
+        border: 1px solid black;
+        margin: auto;
+    }
+    .karta .fot::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../fot/ee4afc767cdf713b3209d1b4b93adbeb503db6ea.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .karta2 .fot::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../fot/36a188a71dcf7906d2618abc26378286d040443a.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+      
+    .karta:hover .fot::before,
+    .karta2:hover .fot::before {
+        opacity: 1;
+    }
+      
+    .karta .serce,
+    .karta .adnot,
+    .karta2 .serce,
+    .karta2 .adnot {
+        transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+    }
+            
+    .karta:hover .adnot img,
+    .karta:hover .serce img
+    .karta2:hover .adnot img,
+    .karta2:hover .serce img {
+        opacity: 1;
+    }
+    .newsletter {
+        width:100%;
+        align-items: center;
+        display: flex;
+      }
+    .news{
+        width: 50%;
+        margin-left: 10%;
+    }
+    .news span{
+        color: #0068FF;
+        font-size: 77px;
+    }
+    #news{
+        font-size: $font-size3;
+        color: $font-color2;
+        font-weight: $font-weight
+    }
+    .input {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    #telefon,
+    #email{
+        width: 80%;
+        height: 40px;
+        margin: 15px;
+        border: 1px solid #0068FF;
+    }
+
+    .input .form-input{
+        border: 1px solid #0068FF;
+        color: #000000
+        padding: 5px;
+      }
+
+    .input input[type="text"], .input button {
+        margin-top: 5px;
+        width: 80%;
+        height: 40px;
+        border: 1px solid #0068FF;
+        background-color: #000000;
+        color: $font-color3;
+        font-weight: bold;
+    }
+
+    .input input.error {
+        border-color: red;
+      }
+    #email:focus::placeholder {
+        color: transparent;
+    }
+      
+    #telefon:focus::placeholder {
+        color: transparent;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 12;
+    }
+}
