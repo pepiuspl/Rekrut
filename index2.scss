@@ -9,13 +9,14 @@ $font-size2: 16px;
 $font-size3: 18px;
 $font-size4: 20px;
 $font-family: Montserrat;
-@media (min-width: 414px) and (max-width: 1920px){
+@media screen and (max-width: 414px) {
     .headline {
         width: 100%;
-        height: 38px;
+        height: 63px;
         top: 0px;
         left: 0px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: $background-color2;
@@ -26,154 +27,144 @@ $font-family: Montserrat;
         font-weight: $font-weight;
     }
     .counter{
-        margin-left: 2%;
-        display: inline-block;
-        white-space: nowrap;
+        width: 100%;
+        margin: 2%;
+        display: flex;
+        justify-content: space-around;
     }
     .headline span{
-       display: inline-block;
        color: $font-color1;
+    }
+    .logo{
+        width: 209px;
+        height: 27px;
+        background: transparent;
+        margin: auto;
+        margin-top: 5%;
     }
     .head {
         position: relative;
         display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
         height: auto;
         width: 100%;
         margin-top: 2%;
-        justify-content: space-between;
-        flex-direction: row;
     }
-    .logo{
-        width: 255px;
-        height: 34px;
-        background: transparent;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2%;
-    }
+
     .socjal{
-        height: auto;
-        width: 10%;
+        width: 30%;
         align-items: center;
-        padding: 2%;
-        margin-bottom: -1%;
-        border-bottom: 1px solid #000000;
-    }
-    .socjal img{
-        padding: 2%;
-        width: 20px;
+        display: flex;
+        justify-content:space-around;
         margin-left: 10%;
     }
     .zakup{
+        width: 70%;
         display: flex;
-        width: 20%;
         height: auto;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: -1%;
         color: $font-color2;
-        border-bottom: solid 1px #000000;
     }
     .num{
-        display: none;
+        position: relative;
+        bottom: 20px;
+        left: 12px;
+       background-color:#000000 ;
+       border-radius: 50%;
+       color: $font-color3;
+       text-align: center;
     }
-
     .zakup img{
         width: 21px;
         padding-right: 10%;
     }
-    .menu{
+    .zakup span{
         display: none;
     }
-    .navigation{
-        display: inline-block;
-        margin-top: -10%;
-        font-size: $font-size2;
-        color: $font-color2;
-        width: 100%;
-        height: 19px;
-        list-style: none;
-        text-align: center;
+    .shop{
         position: relative;
-        right: 5%;
-        margin-left: auto;
+        top: 10px;
     }
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .menu{
+        border: none;
+    }
+    .navigation{
+        display: none;
+        text-align: center;
     }
     nav li{
-        margin: 2%;
         list-style: none;
     }
+
     #wszystko{
         color: $font-color1;
     }
-    .scroll{
-        margin-top: 2%;
-        width: 100%;
-        background: $background-color2;
-        overflow-x: hidden;
-        display: flex;
-    }
+    .scroll {
+        background-color: $background-color2;
+        color: $font-color3;
+        font-size: $font-size1;
+        white-space: normal;
+        text-align: center;
+        letter-spacing: 2px;
+        margin: auto;
+
+      }
+
     .image-text{
         white-space: nowrap;
-        display: flex;
-        flex-direction: row;
         text-align: start;
 
-    }
-    .image-text span{
-        display: inline-flex;
-        flex-direction: row;
-        text-align: center;
+
     }
     #linia{
         white-space: nowrap;
         text-align: center;
         margin: auto;
-        align-items: end;
     }
-    .text{
+    .image-text span{
+        display: inline-table;
+        white-space: normal;
         text-align: center;
-        color: $font-color3;
-        font-size: $font-size3;
-        animation: text-animation 15s linear infinite;
-        white-space: nowrap;
+
     }
-    @keyframes text-animation {
-        0% {
-          transform: translateX(150%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
+    
+      .text {
+        width: 70%;
+        flex-direction: column;
+        white-space: normal;
+        height: auto;
+        margin: auto;
+        object-fit: contain;
+      }
+    .text span{
+        margin: 1%;
     }
     .baner {
         display: flex;
-        justify-content: space-between;
-      }
+        flex-direction: column;
+    }
       
-      .baner .image-container {
-        width: 45%;
-        position: relative;
-      }
-      
-      .baner img {
+    .baner .image-container {
         width: 100%;
-      }
+        position: relative;
+    }
       
-      .button-container {
+    .baner img {
+        width: 100%;
+    }
+      
+    .button-container {
         position: absolute;
         bottom: 18%;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
-      }
+    }
       
-      .button-container button {
+    .button-container button {
         border: none;
         background-color: transparent;
         padding: 0;
@@ -183,46 +174,53 @@ $font-family: Montserrat;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-      }
+    }
       
-      #button {
+    #button {
         width: auto;
-        background-image: url('../fot/Button.svg');
-      }
+        background-image: url('fot/Button.svg');
+    }
       
-      #button3 {
+    #button3 {
         width: auto;
-        background-image: url('../fot/Button-1.svg');
-      }
-       
+        background-image: url('fot/Button-1.svg');
+    }
     span{
-        width: 20%;
-        white-space: nowrap;
-        display: inline;
-        letter-spacing: 2px;
-        margin-left: 1%;
-        }
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+        font-size: $font-size4;
+        white-space: normal;
     }
     .karuzela {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: hidden;
+        justify-content: space-between;
+        margin: 0 auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
       }
       
     .karuzela .slide {
         width: auto;
         justify-content: center;
         align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
-      
+    
+    .slide{
+        display: none;
+    }
+    .slide .active{
+        display: block;
+    }
     .karuzela img {
         width: 100%;
       }
-    .arrow,
-    .arrow2 {
+    .arrow {
         position: relative;
         align-items: center;
       }
@@ -245,12 +243,12 @@ $font-family: Montserrat;
       transform: scaleX(-1);
       cursor: pointer;
       align-items: center;
+      width: 36px;
     }
     
     .arrow2:hover {
       background: url('fot/ARROW.svg');
       transform: scaleX(1);
-
 
     }
     .baner2 {
@@ -263,32 +261,44 @@ $font-family: Montserrat;
       }
       
       .baner2 button {
+        width: 50%;
         z-index: 2;
-        position: absolute;
-        left: 62%;
-        bottom: 15%;
+        border: none;
+        background: none;
+        position: relative;
+        top: 30%;
+        left: 20%;
+      }
+      .dowiedz{
+        position: relative;
+        bottom: 80px;
+        left: 50px;
+      }
+      .dowiedz img{
+        object-fit: contain;
+        width: 70%;
       }
       
       #baner3 {
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        object-fit: cover;
         overflow: hidden;
         margin-top: 2%;
         z-index: -1;
       }
-      
-    .produkty {
+      .produkty {
+        overflow-x: auto;
+        overflow-y: hidden;
         display: flex;
         justify-content: space-between  ;
         align-items:flex-start;
-        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
       }
       
     .karta,
     .karta2 {
-        width: 341px;
-        height: 551px;
+        width: 100%;
         margin-right: 20px;
         margin-bottom: 20px;
     }
@@ -398,7 +408,7 @@ $font-family: Montserrat;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("fot/ee4afc767cdf713b3209d1b4b93adbeb503db6ea.png");
+        background-image: url("../fot/ee4afc767cdf713b3209d1b4b93adbeb503db6ea.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -413,7 +423,7 @@ $font-family: Montserrat;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("fot/36a188a71dcf7906d2618abc26378286d040443a.png");
+        background-image: url("../fot/36a188a71dcf7906d2618abc26378286d040443a.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -443,10 +453,12 @@ $font-family: Montserrat;
         width:100%;
         align-items: center;
         display: flex;
+        flex-direction: column;
+        margin: auto;
       }
     .news{
-        width: 50%;
-        margin-left: 10%;
+        text-align: center;
+        width: 100%;
     }
     .news span{
         color: #0068FF;
@@ -458,7 +470,7 @@ $font-family: Montserrat;
         font-weight: $font-weight
     }
     .input {
-        width: 50%;
+        width: 100%;
         margin: auto;
         text-align: center;
     }
@@ -501,9 +513,4 @@ $font-family: Montserrat;
         text-align: center;
         font-size: 12;
     }
-    #scroll{
-        white-space: nowrap;
-        display: flex;
-        margin-left: 2%;
-        flex-direction: column;
-    }
+}

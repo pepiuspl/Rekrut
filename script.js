@@ -37,20 +37,66 @@ function countdown() {
       return;
     }
   
-    console.log("Formularz jest poprawny. Możesz wykonać akcję dołączenia.");
+    console.log("Dziękujęmy!");
   });
   
-  function validateEmail(email) {
-    const emailRegex = /^\S+@\S+\.\S+$/;
-    return emailRegex.test(email);
+  function changeSlide() {
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("slide");
+    var arrows = document.getElementsByClassName("arrow");
+  
+    function showSlide(index) {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[index].style.display = "block";
+    }
+  
+    function nextSlide() {
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      showSlide(slideIndex);
+    }
+  
+    function prevSlide() {
+      slideIndex--;
+      if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+      showSlide(slideIndex);
+    }
+  
+    arrows[0].addEventListener("click", nextSlide);
+    arrows[1].addEventListener("click", prevSlide);
   }
   
-  function validatePhone(telefon) {
-    const phoneRegex = /^\d{9}$/;
-    return phoneRegex.test(telefon);
+  if (window.innerWidth < 768) {
+    window.addEventListener("load", changeSlide);
+  } else {
+    var slide = document.querySelector(".slide");
+    var arrows = document.querySelector(".arrow2");
+  
+    function nextSlide() {
+      slide.style.left = "-100%";
+      setTimeout(function() {
+        slide.style.left = "0%";
+      }, 500);
+    }
+  
+    function prevSlide() {
+      slide.style.left = "100%";
+      setTimeout(function() {
+        slide.style.left = "0%";
+      }, 500);
+    }
+  
+    arrows.addEventListener("click", nextSlide);
+    arrows.addEventListener("click", prevSlide);
   }
   
-  
+  slides.length = slides.length + 1;
   /*
   $(document).ready(function(){
     $('.karuzela').slick({
