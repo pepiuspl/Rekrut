@@ -110,7 +110,7 @@ $font-family: Montserrat;
         letter-spacing: 2px;
         margin: auto;
 
-      }
+    }
 
     .image-text{
         white-space: nowrap;
@@ -127,10 +127,8 @@ $font-family: Montserrat;
         display: inline-table;
         white-space: normal;
         text-align: center;
-
     }
-    
-      .text {
+    .text {
         width: 70%;
         flex-direction: column;
         white-space: normal;
@@ -145,16 +143,13 @@ $font-family: Montserrat;
         display: flex;
         flex-direction: column;
     }
-      
     .baner .image-container {
         width: 100%;
         position: relative;
-    }
-      
+    } 
     .baner img {
         width: 100%;
     }
-      
     .button-container {
         position: absolute;
         bottom: 18%;
@@ -175,12 +170,10 @@ $font-family: Montserrat;
         background-repeat: no-repeat;
         background-position: center;
     }
-      
     #button {
         width: auto;
         background-image: url('fot/Button.svg');
     }
-      
     #button3 {
         width: auto;
         background-image: url('fot/Button-1.svg');
@@ -201,7 +194,7 @@ $font-family: Montserrat;
         overflow-x: auto;
         overflow-y: hidden;
         position: relative;
-      }
+    }
       
     .karuzela .slide {
         width: auto;
@@ -231,13 +224,13 @@ $font-family: Montserrat;
         cursor: pointer;
         align-items: center;
         width: 36px;
-      }
+    }
       
     .arrow:hover {
         background: url('fot/ARROW.svg');
         transform: scaleX(-1);
     }
-  
+
     .arrow2 {
       transform: translateY(-50%);
       transform: scaleX(-1);
