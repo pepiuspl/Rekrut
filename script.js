@@ -1,5 +1,5 @@
 function countdown() {
-    const targetDate = new Date("2023-07-17T00:00:00Z");
+    const targetDate = new Date("2023-07-31T00:00:00Z");
     setInterval(() => {
      const currentDate = new Date();
      const timeDifference = targetDate - currentDate;
