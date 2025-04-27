@@ -116,27 +116,25 @@ $font-family: Montserrat;
         background: $background-color2;
         overflow-x: hidden;
         display: flex;
+        align-items: center;
     }
     .image-text{
         white-space: nowrap;
         display: flex;
+        align-items: center;
         flex-direction: row;
-        text-align: start;
+        text-align: center;
 
-    }
-    h4 span{
-        margin-top: 40%;
     }
     .image-text span{
         display: inline-flex;
         flex-direction: row;
         text-align: center;
+        align-items: center;
     }
-    #linia{
+    .linia{
+        text-align: bottom;
         white-space: nowrap;
-        text-align: center;
-        margin: auto;
-        align-items: end;
     }
     .text{
         text-align: center;
